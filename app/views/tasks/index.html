@@ -1,0 +1,12 @@
+<h1>ToDo</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= task.name %></li>
+  <% end %>
+</ul>
+
+<%= form_for @task do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit "Submit Task" %>
+<% end %>
