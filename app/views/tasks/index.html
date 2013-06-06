@@ -1,7 +1,7 @@
 <h1>ToDo</h1>
 <ul>
   <% @tasks.each do |task| %>
-    <li><%= task.name %></li>
+    <li style="list-style-type: none;"><input type="checkbox" value="complete"><%= task.name %></li>
   <% end %>
 </ul>
 
