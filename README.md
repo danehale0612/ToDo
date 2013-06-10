@@ -14,6 +14,9 @@ Features:
 
 1. Add Tasks to ToDo app
 2. List All Tasks inside of ToDo app
+3. Add multiple Lists
+4. Add Tasks to those lists
+5. Have those tasks show up in those lists
 
 More coming...
 
@@ -30,6 +33,7 @@ Changelog:
 ==========
 
 2013-06-05: Started Project
+2013 -06-10: Add Lists, Delete Lists, Edit Lists, Add Tasks to Lists
 
 
 
