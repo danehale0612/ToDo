@@ -1,17 +1,13 @@
 class TasksController < ApplicationController
-  def index
-    @tasks = Task.all
-    @task = Task.new
-  end
+
 
   def create
-    @task = Task.create( params[:task] )
+    @task = Task.new(params[:task])
     if @task.save
       flash[:notice] = "Your task has been added!"
-      redirect_to :root
     else
-      flash[:notice] = "Name field Empty. Could not add Task."
-      redirect_to :root
+      flash[:notice] = "Enter Task field Empty. Could not add Task."
     end
+    redirect_to :root
   end
 end

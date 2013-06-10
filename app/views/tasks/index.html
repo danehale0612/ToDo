@@ -6,7 +6,13 @@
 </ul>
 
 <%= form_for @task do |f| %>
-  <%= f.label :name %>
+  <%= f.label :name, "Enter Task" %>
   <%= f.text_field :name %>
   <%= f.submit "Submit Task" %>
+<% end %>
+
+<%= form_for @list do |f| %>
+  <%= f.label :name, "Enter List" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Submit List" %>
 <% end %>
